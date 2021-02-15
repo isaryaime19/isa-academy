@@ -14,14 +14,13 @@
 }
 
 header {
-    /** background: #AA076B;  
-     background: -webkit-linear-gradient(to right, #61045F, #AA076B);  
-     background: linear-gradient(to right, #61045F, hsla(323, 42%, 6%, 0.274)), url("img/hair.jpg") fixed top no-repeat;*/
-     background-image: url("img/hair2.jpg");
+     background: var(--rb-color);  
+     background: -webkit-linear-gradient(to right, #afa4af, #f7c3db);  
+     background: linear-gradient(to right, #302f30, hsla(323, 42%, 6%, 0.274)), url("img/blond.jpg") fixed top no-repeat;
      width: 100%;
-     height: 600px;
-     background-attachment: fixed;
-     background-position: center;
+     height: 90vh;
+    /*background-attachment: fixed;
+     background-position: center;*/
      background-size: cover;
      position: relative; 
      object-fit: cover;    
@@ -40,7 +39,7 @@ header {
 .first {
     color: rgb(102, 88, 88);
     font-family: var(--ff--primary);
-    padding: 30px;
+    padding: 10px;
 } 
 
 .first h2 {
@@ -49,8 +48,8 @@ header {
 
 
 .card1{
-    margin-top: 30px;
-       background-color: var(--secundary-color);
+    margin-top: 20px;
+    background-color: var(--bg--transp);
 
 }
 
@@ -59,8 +58,8 @@ header {
 .precio {
     padding: 10px 30px;
     font-size: 35px;
-    background-color: var(--primary-btn-color);
-    color: white;
+    color: var(--rb-color);
+    border-color: var(--rb-color);
     font-weight: 700;
     text-align: center;
     border-radius: 35px;
@@ -149,7 +148,7 @@ nav li :hover {
     width: 50%;
     position: relative;
     color: white;
-   text-align: right;
+   text-align: left;
     font-family: var(--ff--primary);
     display: block;
     padding: 50px;
@@ -205,11 +204,11 @@ nav li :hover {
 
 
 .servicios h4{
-    margin-top: 50px;
+    
     margin-bottom: 50px;
     font-family: var(--ff--primary);
     font-size: var(--fs--secundary);
-    color: var(--primary-btn-color);
+    color: var(--rb-color);
     font-weight: 800;
    
 }
@@ -288,34 +287,11 @@ footer{
     
 }  
 
-
-
-.portfolio {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.portfolio__item {  
-   object-fit: cover;
-}
-
-.portfolio__img {
-transition: 
-transform 750ms cubic-bezier(.5, 0, .5, 1),
-opacity 250ms linear;
-}
-
-.portfolio__item:focus {
-position: relative;
-z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-transform: scale(1.2);
-
+.img1 {
+    border-bottom: var(--rb-color) solid 10px;
+    border-left: var(--rb-color) solid 10px;
+    border-style:groove;
+  
 }
 
 .tendencias {
