@@ -4,7 +4,7 @@
     --fs--primary:60px;
     --fs--secundary: 35px;
     --fs--base:20px;
-    --fs--na:20px;
+    --fs--na:25px;
     --bg--transp: hsla(300, 22%, 92%, 0.719);
     --primary-color: #ffd9b3;
     --secundary-color: #e1bc91;
@@ -32,8 +32,11 @@ header {
 }
 
 .sidebar {
-    width: 80%;
+    width: 100%;
     text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right, #302f30, hsla(323, 42%, 6%, 0.274));
+    color: white;
 }
 
 .first {
@@ -69,13 +72,9 @@ header {
     font-weight: 600;
 }
 
-nav{ 
-    font-family:var(--ff--secundary);
-
-}
-          
+         
 nav a {
-    font-family:var(--ff--secundary);
+    font-family:var(--ff--primary);
     font-size: var(--fs--na);
    
 }
@@ -90,7 +89,6 @@ nav li :hover {
     background-color: #AA076B;
 }
 
-/*header .portada{margin-left: 220px;}*/
 
 /*Typography*/
 
@@ -166,8 +164,7 @@ nav li :hover {
 /*Buttons*/
 
 .buttons {
-    margin-top: 40px;
-    
+    margin-top: 40px;    
 }
 
 .buttons .btnlight {
@@ -201,11 +198,14 @@ nav li :hover {
     font-weight: 800;
 }
 
+.buttons .btt:hover{
+    background-color: white;
+}
+
 
 
 .servicios h4{
-    
-    margin-bottom: 50px;
+     margin-bottom: 50px;
     font-family: var(--ff--primary);
     font-size: var(--fs--secundary);
     color: var(--rb-color);
@@ -214,54 +214,7 @@ nav li :hover {
 }
 
 
-
-
-.purple{
-    color: white;
-    background-color: hsla(323, 92%, 35%, 0.733);
-}
-
-
-
-
-.fab{ color: #AA076B; }
-
-/*footer*/
-.contact li {
-    text-decoration: none;
-    color: black;
-    font-size: 35px;
-    font-family: 'Tangerine', cursive;
-}
-
-
-.contact {
-    color: black;
-}
-
-.contact span{
-    color: #AA076B;
-    font-size: 35px;
-}
-
-
-
-.logo {
-    width: 80px;
-}
-.imagenes2{
-    width: 200px;
-}
-
 /*media query*/
-
-
-footer{
-        text-align: center;
-        padding: 15px;
-        background-color:#AA076B;
-        color: white;
-        }
 
 @media screen and (max-width: 700px) {
     
@@ -288,16 +241,19 @@ footer{
 }  
 
 .img1 {
-    border-bottom: var(--rb-color) solid 10px;
-    border-left: var(--rb-color) solid 10px;
-    border-style:groove;
-  
+    border-bottom: var(--secundary-color) solid 10px;
+    border-left: var(--secundary-color) solid 10px;
+    
 }
 
+
+/*footer*/
+
 .tendencias {
-   height: 300px;
-   background-color:var(--primary-btn-color);
-  padding: 30px;
+   height: 400px;
+   background: var(--rb-color);
+   padding-top: 50px;
   color: white;
+  text-align: center;
   
 }
