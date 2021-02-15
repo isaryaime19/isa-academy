@@ -10,6 +10,7 @@
     --secundary-color: #e1bc91;
     --thirty-color: #f1d6b7;
     --primary-btn-color:#8b2a12;
+    --rb-color: rgb(102, 88, 88);
 }
 
 header {
@@ -35,6 +36,17 @@ header {
     width: 80%;
     text-align: center;
 }
+
+.first {
+    color: rgb(102, 88, 88);
+    font-family: var(--ff--primary);
+    padding: 30px;
+} 
+
+.first h2 {
+    font-size: 55px;
+}
+
 
 .card1{
     margin-top: 30px;
@@ -171,11 +183,13 @@ nav li :hover {
 }
 
 .buttons .btn-outline-light {
-    font-family:var(--ff-secundary);
+    font-family:var(--ff--primary);
     font-size: 25px;
     width: 300px;
     padding: 10px;
     border-radius: 30px;
+    border-color: var(--rb-color);
+    color: var(--rb-color);
 }
 
 .buttons .btt{
