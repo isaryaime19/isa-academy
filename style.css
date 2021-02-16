@@ -32,7 +32,7 @@ header {
 }
 
 .sidebar {
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 25px;
     background: linear-gradient(to right, #302f30, hsla(323, 42%, 6%, 0.274));
@@ -216,8 +216,11 @@ nav li :hover {
 
 /*media query*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     
+    .sidebar{
+        display: none;
+    }
     header{height: 700px;}
 
     header .portada{margin-left: 0px;}
@@ -236,8 +239,7 @@ nav li :hover {
     }
     .logo{width: 60px;}
     
-    .image{transform: rotate(0); text-align: center;}
-    
+       
 }  
 
 .img1 {
@@ -251,9 +253,14 @@ nav li :hover {
 
 .tendencias {
    height: 400px;
-   background: var(--rb-color);
+   background: rgb(94, 72, 72);
    padding-top: 50px;
   color: white;
   text-align: center;
-  
+  font-family: var(--ff--primary);  
+}
+
+.tendencias .row {
+    background-color: rgb(94, 72, 72);
+    padding: 30px;
 }
