@@ -26,6 +26,11 @@ header {
      object-fit: cover;    
  }
 
+ nav li :hover {
+    background-color:#e7bdd7;    
+}
+
+
 .main-content {
  background-color: #f1d6b7;
  padding-bottom: 50px;
@@ -56,8 +61,6 @@ header {
 
 }
 
-
-
 .precio {
     padding: 10px 30px;
     font-size: 35px;
@@ -79,16 +82,6 @@ nav a {
    
 }
 
-nav li :hover {
-    background-color:#e7bdd7;    
-}
-
-.nav2{
-    visibility: hidden;
-    z-index: 100;
-    background-color: #AA076B;
-}
-
 
 /*Typography*/
 
@@ -96,22 +89,6 @@ nav li :hover {
 .ml6 {
     font-family: var(--ff--primary);
 }
-
-.ml6 span{
-    position: relative;
-    font-weight: 900;
-    font-size: 70px;
-    }
-
-.ml6 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-    }
-
 
     h3{font-size: var(--fs--secundary);}
 
@@ -127,29 +104,21 @@ nav li :hover {
     font-size: 30px;
     color: var(--primary-btn-color);
    }
-    .presentacion h5{
-        font-family: var(--ff--primary);
-        font-size: 30px;
-        color: #AA076B;
-    }
+   
 
     p{
         font-size:var(--fs--na)
     }
 
-
-.lg {
-    display: inline;
-}
-
 .bb {
-    width: 50%;
+    width: 80%;
     position: relative;
     color: white;
    text-align: left;
     font-family: var(--ff--primary);
     display: block;
-    padding: 50px;
+    margin-top: 100px;
+   
 }
 
 .bb p {
@@ -190,9 +159,9 @@ nav li :hover {
 
 .buttons .btt{
     background-color: #e1bc91;
-    font-size: 25px;
-    width: 380px;
-    padding: 10px;
+    font-size: 30px;
+    width: 400px;
+    padding: 15px;
     border-radius: 30px;
     font-family:var(--ff--primary); 
     font-weight: 800;
@@ -202,15 +171,12 @@ nav li :hover {
     background-color: white;
 }
 
-
-
 .servicios h4{
      margin-bottom: 50px;
     font-family: var(--ff--primary);
     font-size: var(--fs--secundary);
     color: var(--rb-color);
-    font-weight: 800;
-   
+    font-weight: 800;   
 }
 
 
@@ -221,39 +187,58 @@ nav li :hover {
     .sidebar{
         display: none;
     }
-    header{height: 700px;}
 
-    header .portada{margin-left: 0px;}
-
-    
-    .portada{text-align: center;}
-    
-    .ml6 span{
-      font-size: 40px;
+    header{
+        height: 500px;
+        width: 100%;
     }
-    .buttons{padding: 15px;}
-    .buttons .btnlight{margin-top: 15px;}
-     
-    .lead {
+
+    .bb {       
+        text-align: center; 
+        margin-top: 10px;    
+    }
+
+   .bb .ml6 {
+        font-size: 40px;
+    }
+
+    .bb p {       
+        font-size: 20px; 
+    }
+
+    .buttons .btt{
         font-size: 20px;
+        width: 300px;
+        padding: 10px;
     }
-    .logo{width: 60px;}
-    
-       
+    .portada{
+        text-align: center;
+    }
+  
+    .tendencias .row {
+        height: fit-content;
+    }
+
+    footer {       
+        padding-top: 60px;
+    }
+           
 }  
 
 .img1 {
     border-bottom: var(--secundary-color) solid 10px;
     border-left: var(--secundary-color) solid 10px;
-    
 }
 
 
-/*footer*/
+
+section {
+    background-color: rgb(94, 72, 72);;
+}
 
 .tendencias {
-   height: 400px;
-   background: rgb(94, 72, 72);
+   height: 500px;
+   background-color: rgb(94, 72, 72);
    padding-top: 50px;
   color: white;
   text-align: center;
@@ -262,5 +247,6 @@ nav li :hover {
 
 .tendencias .row {
     background-color: rgb(94, 72, 72);
-    padding: 30px;
+    padding: 10px;
 }
+
