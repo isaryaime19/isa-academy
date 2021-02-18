@@ -26,6 +26,10 @@ header {
      object-fit: cover;    
  }
 
+ .logo {
+     width: 200px;
+ }
+
  nav li :hover {
     background-color:#e7bdd7;    
 }
@@ -217,6 +221,10 @@ nav a {
   
     .tendencias .row {
         height: fit-content;
+    }
+
+    .logo {
+        width: 50px;
     }
 
     footer {       
